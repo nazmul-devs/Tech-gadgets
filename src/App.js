@@ -4,11 +4,13 @@ import Home from "./Pages/Home/Home/Home";
 import Login from "./Pages/Login/Login";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NoMatch from "./Pages/NoMatch/NoMatch";
+import Header from "./Pages/Header/Header";
 
 function App() {
 	return (
 		<div className="App">
 			<BrowserRouter>
+				<Header />
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/login" element={<Login />} />

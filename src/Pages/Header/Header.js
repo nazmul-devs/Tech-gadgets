@@ -1,35 +1,48 @@
 import React from "react";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import logo from "../../Images/logo.jpg";
 
 const Header = () => {
 	return (
 		<Navbar
-			bg="light"
-			className="w-100"
+			className="w-100 text-white"
 			expand="lg"
-			style={{ backgrounClor: "orange" }}
+			style={{ background: "#FFAE03" }}
 		>
 			<Container>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
-				<Navbar.Collapse id="basic-navbar-nav">
+				<Navbar.Collapse id="basic-navbar-nav" className="fw-bold">
+					<Link to="/">
+						<img className="" width={100} src={logo} alt="" />
+					</Link>
 					<Nav className="ms-auto">
-						<Nav.Link href="#home">Home</Nav.Link>
-						<Nav.Link href="#link">Link</Nav.Link>
-						<NavDropdown title="Category" id="basic-nav-dropdown">
-							<NavDropdown.Item href="#action/3.1">
-								Drone
-							</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.2">
-								Laptop
-							</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.3">
-								Headphone
-							</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.4">
-								Separated link
-							</NavDropdown.Item>
-						</NavDropdown>
-						<Nav.Link href="#link">Login</Nav.Link>
+						<Nav.Link className="text-white" as={Link} to="/">
+							Home
+						</Nav.Link>
+
+						<Nav.Link className="text-white" as={Link} to="/login">
+							Dashboard
+						</Nav.Link>
+						<Nav.Link className="text-white" as={Link} to="/login">
+							Card
+						</Nav.Link>
+						<Nav.Link className="text-white" as={Link} to="/login">
+							<button
+								className="btn rounded-pill px-3 py-1 fw-bold text-white"
+								style={{ background: "dodgerblue" }}
+							>
+								Login
+							</button>
+						</Nav.Link>
+						<Nav.Link className="text-white">
+							<button
+								className="btn rounded-pill px-3 py-1 fw-bold text-white"
+								style={{ background: "dodgerblue" }}
+							>
+								<i className="fas fa-sign-in-alt"></i> Logout
+							</button>
+						</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>
 			</Container>
