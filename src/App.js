@@ -1,21 +1,24 @@
-import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Home from "./Pages/Home/Home/Home";
+import Login from "./Pages/Login/Login";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NoMatch from "./Pages/NoMatch/NoMatch";
 import Header from "./Pages/Header/Header";
-import { Footer } from "react-bootstrap/lib/modal";
+import Footer from "./Pages/Footer/Footer";
 
 function App() {
 	return (
 		<div className="App">
-			<header className="App-header">
+			<BrowserRouter>
 				<Header />
-				<h2>
-					Hello Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Repellendus animi aliquid facere dolorem explicabo cumque et
-					alias aspernatur sint quas?
-				</h2>
-			</header>
-			<Footer>hello</Footer>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/login" element={<Login />} />
+					<Route path="*" element={<NoMatch />} />
+				</Routes>
+				<Footer />
+			</BrowserRouter>
 		</div>
 	);
 }

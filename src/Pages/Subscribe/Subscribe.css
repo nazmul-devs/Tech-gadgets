@@ -1,0 +1,24 @@
+.subscribe{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(43, 42, 42, 0.45)),url("../../Images/Subscribe-img.jpg");
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.subs-input{
+    padding: 15px 10px;
+    border-radius: 5px 0 0 5px;
+    border: 0;
+}
+.subs-btn{
+    border: 0;
+    padding: 15px 0px;
+    border-radius: 0 5px 5px 0;
+    background-color: #FFA500;
+}
+.subs-btn:hover{
+    background-color: #1E90FF;
+    transition-duration: .5s;
+    color: black;
+    font-weight: 400;
+}
