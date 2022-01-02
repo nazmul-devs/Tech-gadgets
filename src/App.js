@@ -5,6 +5,7 @@ import Login from "./Pages/Login/Login";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NoMatch from "./Pages/NoMatch/NoMatch";
 import Header from "./Pages/Header/Header";
+import Footer from "./Pages/Footer/Footer";
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 					<Route path="/login" element={<Login />} />
 					<Route path="*" element={<NoMatch />} />
 				</Routes>
+				<Footer />
 			</BrowserRouter>
 		</div>
 	);
