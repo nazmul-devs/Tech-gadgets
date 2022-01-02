@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Pages/Header/Header";
+import { Footer } from "react-bootstrap/lib/modal";
 
 function App() {
 	return (
@@ -14,6 +15,7 @@ function App() {
 					alias aspernatur sint quas?
 				</h2>
 			</header>
+			<Footer>hello</Footer>
 		</div>
 	);
 }
