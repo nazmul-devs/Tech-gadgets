@@ -1,0 +1,11 @@
+[
+    {
+        "heading":"Our Services",
+        "features":["About Store","New Collection","Contact Us","Letest News","Our Sitemap"],
+        "photos":["http://magento2.magentech.com/themes/sm_zumi/pub/media/wysiwyg/instagram/thumb-3.jpg","http://magento2.magentech.com/themes/sm_zumi/pub/media/wysiwyg/instagram/thumb-3.jpg","http://magento2.magentech.com/themes/sm_zumi/pub/media/wysiwyg/instagram/thumb-3.jpg","http://magento2.magentech.com/themes/sm_zumi/pub/media/wysiwyg/instagram/thumb-3.jpg"]
+    },
+    {
+        "heading":"Information",
+        "features":["About Store","New Collection","Contact Us","Letest News","Our Sitemap"]
+    }
+]
