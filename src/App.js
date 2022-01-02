@@ -1,19 +1,20 @@
-import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Header from "./Pages/Header/Header";
+import Home from "./Pages/Home/Home/Home";
+import Login from "./Pages/Login/Login";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NoMatch from "./Pages/NoMatch/NoMatch";
 
 function App() {
 	return (
 		<div className="App">
-			<header className="App-header">
-				<Header />
-				<h2>
-					Hello Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Repellendus animi aliquid facere dolorem explicabo cumque et
-					alias aspernatur sint quas?
-				</h2>
-			</header>
+			<BrowserRouter>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/login" element={<Login />} />
+					<Route path="*" element={<NoMatch />} />
+				</Routes>
+			</BrowserRouter>
 		</div>
 	);
 }
