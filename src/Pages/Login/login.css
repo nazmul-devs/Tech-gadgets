@@ -1,0 +1,19 @@
+.login {
+	align-items: center;
+	background: url("https://www.techsolo.net/wp-content/uploads/2021/07/Gadgets2.jpg")
+		no-repeat center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	height: 90vh;
+	width: 100%;
+}
+.login-card {
+	background: #fff;
+	height: 500px;
+	width: 600px;
+}
+.input-form input {
+	background: #7e7e7e6d;
+	border: none;
+}
