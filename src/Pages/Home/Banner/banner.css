@@ -4,9 +4,6 @@
 		no-repeat center;
 	background-size: cover;
 }
-.banner > img {
-	width: 100vw;
-}
 .bannerText {
 	width: 40%;
 	margin-left: 8%;
