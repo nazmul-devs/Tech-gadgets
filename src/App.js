@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NoMatch from "./Pages/NoMatch/NoMatch";
 import Header from "./Pages/Header/Header";
 import Footer from "./Pages/Footer/Footer";
+import Register from "./Pages/Login/Register";
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/login" element={<Login />} />
+					<Route path="/register" element={<Register />} />
 					<Route path="*" element={<NoMatch />} />
 				</Routes>
 			</BrowserRouter>

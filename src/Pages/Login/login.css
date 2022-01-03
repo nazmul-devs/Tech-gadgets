@@ -14,6 +14,19 @@
 	width: 600px;
 }
 .input-form input {
-	background: #7e7e7e6d;
+	background: #bfbfbf75;
 	border: none;
+}
+.submit-btn {
+	background: #ff5e13;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	transition: 0.5s;
+}
+.submit-btn:hover {
+	background: #d64806;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
 }
