@@ -3,7 +3,7 @@ import "./login.css";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 
-const Login = () => {
+const Register = () => {
 	const {
 		register,
 		handleSubmit,
@@ -16,7 +16,7 @@ const Login = () => {
 	return (
 		<div className="login">
 			<div className="login-card">
-				<h2 className="text-center my-3">Login here</h2>
+				<h2 className="text-center my-3">Register here</h2>
 				<div className="d-flex justify-content-center ">
 					<form
 						onSubmit={handleSubmit(onSubmit)}
@@ -29,7 +29,12 @@ const Login = () => {
 							className="my-3 py-2 ps-3 rounded "
 						/>
 						<input
-							placeholder="Your password"
+							placeholder="Your name"
+							{...register("example")}
+							className="mb-3 py-2 ps-3 rounded"
+						/>
+						<input
+							placeholder="Password"
 							{...register("example")}
 							className="mb-3 py-2 ps-3 rounded"
 						/>
@@ -70,7 +75,7 @@ const Login = () => {
 							</button>
 						</div>
 						<p className="text-secondary">
-							Have an account? <Link to="/register">Register</Link>
+							Have an account? <Link to="/login">Login</Link>
 						</p>
 					</div>
 				</div>
@@ -79,4 +84,4 @@ const Login = () => {
 	);
 };
 
-export default Login;
+export default Register;
