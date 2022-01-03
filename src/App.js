@@ -19,6 +19,7 @@ function App() {
 					<Route path="/register" element={<Register />} />
 					<Route path="*" element={<NoMatch />} />
 				</Routes>
+				<Footer />
 			</BrowserRouter>
 		</div>
 	);
