@@ -26,7 +26,7 @@ const Product = () => {
                 <div className='under-line mx-auto'></div>
                 <div className=''>
                     <ul className='nav product-category d-flex justify-content-center'>
-                        {/* <li onClick={() => } className='nav-item category-item'>All</li> */}
+                        <li  className='nav-item category-item'>All</li>
                         <li onClick={() => filterProduct('Camera')} className='nav-item category-item'>Camera</li>
                         <li onClick={() => filterProduct('Laptop')} className='nav-item category-item'>Laptop</li>
                         <li onClick={() => filterProduct('Headphone')} className='nav-item category-item'>Headphone</li>

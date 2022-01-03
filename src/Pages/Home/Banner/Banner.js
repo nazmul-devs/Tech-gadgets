@@ -1,7 +1,7 @@
 import React from "react";
 import "./banner.css";
-const bannerImg =
-	"https://images.unsplash.com/photo-1515940175183-6798529cb860?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FkZ2V0fGVufDB8fDB8fA%3D%3D&w=1000&q=80";
+// const bannerImg =
+// 	"https://images.unsplash.com/photo-1515940175183-6798529cb860?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FkZ2V0fGVufDB8fDB8fA%3D%3D&w=1000&q=80";
 
 const Banner = () => {
 	return (
