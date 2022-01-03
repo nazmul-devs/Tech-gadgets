@@ -1,0 +1,12 @@
+.f-list{
+    list-style: none;
+}
+.f-list li{
+    margin-bottom: 5px;
+}
+.f-icon{
+    font-size: 20px;
+}
+.f-copy{
+    background-color: #FFA500;;
+}
