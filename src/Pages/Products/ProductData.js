@@ -144,6 +144,183 @@ const ProductData = [
         price: "900"
     },
 
+    {   
+        id: 19,
+        categorey: 'Headphone',
+        img: "https://m.media-amazon.com/images/I/71KEOerw6VL._AC_SL1500_.jpg",
+        title: "Skullcandy Hesh 2 Wireless Over-Ear Headphone",
+        price: "50", 
+    },
+
+    {   
+        id: 20,
+        categorey: 'Headphone',
+        img: "https://m.media-amazon.com/images/I/61xT7CDtrwS._AC_SL1500_.jpg",
+        title: "Qisebin E7 Active Noise Cancelling Headphones Bluetooth Headphones",
+        price: "55"
+    },
+
+    {   
+        id: 21,
+        categorey: 'Headphone',
+        img: "https://m.media-amazon.com/images/I/71oD0txW3uL._AC_SL1500_.jpg",
+        title: "Bowers & Wilkins PX5 On Ear Noise Cancelling Wireless Headphones",
+        price: "290"
+    },
+
+    {   
+        id: 22,
+        categorey: 'Headphone',
+        img: "https://m.media-amazon.com/images/I/51jx3dB4HOL._AC_SL1000_.jpg",
+        title: "Jabra Evolve 65 UC Stereo Wireless Bluetooth Headset / Music Headphones ",
+        price: "199"
+    },
+
+    {
+        id: 23,
+        categorey: 'Headphone',
+        img: "https://m.media-amazon.com/images/I/71WMXUu+-4L._AC_SL1500_.jpg",
+        title: "Basics Earphones with Lightning Connector - Apple MFi Certified, Black",
+        price: "30"
+    },
+
+    {   
+        id: 24,
+        categorey: 'Headphone',
+        img: "https://m.media-amazon.com/images/I/719x+oKOwML._AC_SL1500_.jpg",
+        title: "Andrea Communications C1-1030600-1 Wnc-2100 Wireless Noise-Canceling Bluetooth",
+        price: "80"
+    },
+
+    {   
+        id: 25,
+        categorey: 'Headphone',
+        img: "https://m.media-amazon.com/images/I/71X63WCKKbL._AC_SL1500_.jpg",
+        title: "Andrea Communications NC-455VM USB Over-Ear Circumaural Stereo USB Computer Headset",
+        price: "70"
+    },
+
+    {   
+        id: 26,
+        categorey: 'Headphone',
+        img: "https://m.media-amazon.com/images/I/610tRznB93L._AC_SX480_SY360_.jpg",
+        title: "USB Headset with Microphone for PC, Wired Headphones with USB-C Adapter",
+        price: "40"
+    },
+
+    {   
+        id: 27,
+        categorey: 'Drone',
+        img: "https://m.media-amazon.com/images/I/71+yBG7-LUL._AC_SL1500_.jpg",
+        title: "NEHEME NH525 Foldable Drones with 720P HD Camera for Adults, RC Quadcopter WiFi FPV Live Video, Altitude Hold",
+        price: "150", 
+    },
+
+    {   
+        id: 28,
+        categorey: 'Drone',
+        img: "https://m.media-amazon.com/images/I/716Sd4JOmWL._AC_SL1500_.jpg",
+        title: "SYMA X500 4K Drone with UHD Camera for Adults, Easy GPS Quadcopter for Beginner with 56mins Flight Time",
+        price: "255"
+    },
+
+    {   
+        id: 29,
+        categorey: 'Drone',
+        img: "https://m.media-amazon.com/images/I/61ZVO-EBLpL._AC_SL1500_.jpg",
+        title: "DJI Mini 2 Ultralight and Foldable Drone Quadcopter, 3-Axis Gimbal with 4K Camera, 12MP Photo",
+        price: "500"
+    },
+
+    {   
+        id: 30,
+        categorey: 'Drone',
+        img: "https://m.media-amazon.com/images/I/71lOHyfoVhL._AC_SL1500_.jpg",
+        title: "Ryze Tech Tello - Mini Drone Quadcopter UAV for Kids Beginners 5MP Camera HD720 Video 13min Flight Time",
+        price: "199"
+    },
+
+    {
+        id: 31,
+        categorey: 'Drone',
+        img: "https://m.media-amazon.com/images/I/61N20OJMa-L._AC_SL1500_.jpg",
+        title: "DJI FPV Combo - First-Person View Drone UAV Quadcopter with 4K Camera, S Flight Mode",
+        price: "300"
+    },
+
+    {   
+        id: 32,
+        categorey: 'Drone',
+        img: "https://m.media-amazon.com/images/I/617dNWWRQaL._AC_SL1500_.jpg",
+        title: "Super-Wide 150° FOV, HD Low-Latency Transmission, Emergency Brake and Hover, Gray",
+        price: "990"
+    },
+
+    {   
+        id: 33,
+        categorey: 'Mobile',
+        img: "https://m.media-amazon.com/images/I/81AT+Flc+EL._AC_SL1500_.jpg",
+        title: "Samsung Galaxy Note 20 Ultra 5G Factory Unlocked Android Cell Phone 128GB US",
+        price: "1170"
+    },
+
+    {   
+        id: 34,
+        categorey: 'Mobile',
+        img: "https://m.media-amazon.com/images/I/71+q0CXOLEL._AC_SL1500_.jpg",
+        title: "Samsung Galaxy Note20 Ultra 5G Phone Case - Hygienically Clean Germ Fighting Antimicrobial Properties ",
+        price: "400"
+    },
+
+    {   
+        id: 35,
+        categorey: 'Mobile',
+        img: "https://m.media-amazon.com/images/I/51uEwkqjZTL._AC_SL1040_.jpg",
+        title: "OnePlus 8 Glacial Green,​ 5G Unlocked Android Smartphone U.S Version, 8GB RAM+128GB Storage",
+        price: "550", 
+    },
+
+    {   
+        id: 36,
+        categorey: 'Mobile',
+        img: "https://m.media-amazon.com/images/I/61aWtezBYlL._AC_SL1500_.jpg",
+        title: "Motorola edge | Unlocked | Made for US by Motorola | 6/256GB | 64MP Camera",
+        price: "399"
+    },
+
+    {   
+        id: 37,
+        categorey: 'Mobile',
+        img: "https://www.mobiledokan.com/wp-content/uploads/2021/10/Apple-iPhone-13-Pro-image.jpg",
+        title: "Apple iPhone 13 Pro",
+        price: "1300"
+    },
+
+    {   
+        id: 38,
+        categorey: 'Mobile',
+        img: "https://www.mobiledokan.com/wp-content/uploads/2020/10/Apple-iphone-12-Mini.jpg",
+        title: "Apple iPhone 12 Mini",
+        price: "1199"
+    },
+
+    {
+        id: 39,
+        categorey: 'Mobile',
+        img: "https://www.mobiledokan.com/wp-content/uploads/2021/08/Motorola-Moto-G60-image.jpg",
+        title: "Motorola Moto G60",
+        price: "400"
+    },
+
+    {   
+        id: 40,
+        categorey: 'Mobile',
+        img: "https://www.mobiledokan.com/wp-content/uploads/2021/11/Nokia-G20-image.jpg",
+        title: "Nokia G20",
+        price: "250"
+    },
+
+
 ]
 
 export default ProductData;

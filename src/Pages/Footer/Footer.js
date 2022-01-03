@@ -9,10 +9,10 @@ const Footer = () => {
 					<div className="col-12 col-md-5">
 						<ul className="f-list">
 						    <h5>CONTACT US</h5>
-							<li>No 40 Baria Sreet 133/2 NewYork City, NY, USD.</li>
-							<li> Hidesign@Magentech.com</li>
-							<li>(800) 1234 8888 - (800) 1234 9999</li>
-							<li>Open Time: 8:00AM - 6:00PM</li>
+							<li><i className="fas fa-home me-2"></i>No 40 Baria Sreet 133/2 NewYork City, NY, USD.</li>
+							<li><i className="far fa-envelope me-2"></i>Hidesign@Magentech.com</li>
+							<li><i className="fas fa-phone-alt me-2"></i>(800) 1234 8888 - (800) 1234 9999</li>
+							<li><i className="far fa-clock me-2"></i>Open Time: 8:00AM - 6:00PM</li>
 						</ul>
 					</div>
 					<div className="col-12 col-md-4">
@@ -28,11 +28,11 @@ const Footer = () => {
 					<div className="col-12 col-md-3">
 						<h5>FOLLOW US</h5>
 						<ul className="f-list">
-							<li><i class="fab fa-facebook-f f-icon"></i></li>
-							<li><i class="fab fa-twitter f-icon"></i></li>
-							<li><i class="fab fa-google-plus-g f-icon"></i></li>
-							<li><i class="fab fa-linkedin-in f-icon"></i></li>
-							<li><i class="fab fa-pinterest-p f-icon"></i></li>
+							<li><i className="fab fa-facebook-f f-icon"></i></li>
+							<li><i className="fab fa-twitter f-icon"></i></li>
+							<li><i className="fab fa-google-plus-g f-icon"></i></li>
+							<li><i className="fab fa-linkedin-in f-icon"></i></li>
+							<li><i className="fab fa-pinterest-p f-icon"></i></li>
 						</ul>
 					</div>
 				</div>

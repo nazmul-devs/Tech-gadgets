@@ -7,7 +7,7 @@ const Banner = () => {
 	return (
 		<div className="banner  d-flex align-items-center">
 			<div className="bannerText text-center">
-				<h2 classNam="fw-bold">
+				<h2 className="fw-bold">
 					Wellcome to <span style={{ color: "orange" }}>Tech Gadgets</span>{" "}
 				</h2>
 				<p className="text-justify my-3">

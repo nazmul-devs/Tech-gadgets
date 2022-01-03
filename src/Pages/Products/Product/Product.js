@@ -1,16 +1,22 @@
-import React, { useState } from 'react';
-import ProductData from '../ProductData';
+import React, { useEffect, useState } from 'react';
 import './Product.css'
 
 const Product = () => {
 
-    const [products, setProducts] = useState(ProductData);
+    const [products, setProducts] = useState([]);
+    const [filters, setFilters] = useState([]);
+
+    useEffect(() => {
+        fetch('./ProductData.json')
+        .then(res => res.json())
+        .then(data => setProducts(data))
+    })
     
     const filterProduct = (categProduct) => {
-        const updatedProduct = ProductData.filter((curElem) => {
+        const updatedProduct = products.filter((curElem) => {
             return curElem.categorey === categProduct;
         });
-        setProducts(updatedProduct);
+        setFilters(updatedProduct);
     }
 
     return (
@@ -18,9 +24,9 @@ const Product = () => {
             <div className='container px-0'>
                 <h3>Our Products</h3>
                 <div className='under-line mx-auto'></div>
-                <div>
-                    <ul className='nav product-category justify-content-around'>
-                        <li onClick={() => setProducts(ProductData)} className='nav-item category-item'>All</li>
+                <div className=''>
+                    <ul className='nav product-category d-flex justify-content-center'>
+                        {/* <li onClick={() => } className='nav-item category-item'>All</li> */}
                         <li onClick={() => filterProduct('Camera')} className='nav-item category-item'>Camera</li>
                         <li onClick={() => filterProduct('Laptop')} className='nav-item category-item'>Laptop</li>
                         <li onClick={() => filterProduct('Headphone')} className='nav-item category-item'>Headphone</li>
@@ -31,7 +37,7 @@ const Product = () => {
 
                 <div className="row my-3 g-4">
                     {
-                        products.map((product) => { 
+                        filters.map((product) => { 
 
                             const {img, title, price, id} = product;
 

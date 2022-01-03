@@ -13,7 +13,7 @@
     margin-left: 250px;
 }
 .category-item{
-    margin-left: 5px;
+    margin-left: 15px;
     border-radius: 25px;
     background-color: rgb(199, 197, 197);
     padding: 8px 20px;
@@ -25,7 +25,7 @@
 }
 .product-img{
     width: 70%;
-    height: 150px;
+    height: 200px;
 }
 .price-color{
     color: #e01222;
