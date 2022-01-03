@@ -1,7 +1,11 @@
 import React from 'react';
-import { Card, CardGroup, Col, ListGroup, Row } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook,faYoutubeSquare,faTwitterSquare,faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+ import { faCopyright } from '@fortawesome/free-regular-svg-icons';
+import {Col, ListGroup, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import footerData from './footerData.json';
+import footerData from './footerData.json'
+import './FooterMain.css'
 const FooterMain = () => {
     return (
 <footer className="row justify-content-between my-footer align-items-center mt-5 text-center bg-light">
@@ -22,7 +26,8 @@ const FooterMain = () => {
            return(
             <Col>
             <h3>{heading}</h3>
-            <ListGroup variant="flush">
+            <hr className='w-75 m-auto'/>
+            <ListGroup variant="" className="border-0 mt-3">
           {features.map(featureText=><Link><ListGroup.Item>{featureText}</ListGroup.Item></Link>)}
         </ListGroup>
             </Col>
@@ -33,13 +38,12 @@ const FooterMain = () => {
   
 </div>
 <div className="col-lg-4 mb-2">
-<CardGroup>
-{footerData[0].photos.map(photo=><Card>
-    <Card.Img variant="top" src={photo} />
-  </Card>)}
-</CardGroup>
-  
-</div>
+          <span className="fs-2 mx-2"><FontAwesomeIcon icon={faFacebook} /></span>
+           <span className="fs-2 mx-2"><FontAwesomeIcon icon={faGithubSquare} /></span>
+          <span className="fs-2 mx-2"><FontAwesomeIcon icon={faYoutubeSquare} /></span>
+           <span className="fs-2 mx-2"><FontAwesomeIcon icon={faTwitterSquare} /></span>
+           <p>Tech Gadget<span className="fs-6"><FontAwesomeIcon icon={faCopyright}/></span> AllRight reserve</p>
+         </div>
 </footer>
  );
 };
