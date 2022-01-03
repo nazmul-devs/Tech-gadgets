@@ -1,10 +1,24 @@
 import React, { useEffect, useState } from 'react';
+import { Button, Modal } from 'react-bootstrap';
 import './Product.css'
+
+function MyVerticallyCenteredModal() {
+	return (
+        <Modal
+		size="md"
+		aria-labelledby="contained-modal-title-vcenter"
+		centered
+        >
+		
+	  </Modal>
+	);
+  }
 
 const Product = () => {
 
     const [products, setProducts] = useState([]);
     const [filters, setFilters] = useState([]);
+    const [modalShow, setModalShow] = React.useState(false);
 
     useEffect(() => {
         fetch('./ProductData.json')
@@ -26,13 +40,14 @@ const Product = () => {
                 <div className='under-line mx-auto'></div>
                 <div className=''>
                     <ul className='nav product-category d-flex justify-content-center'>
-                        <li  className='nav-item category-item'>All</li>
+                        <li className='nav-item category-item'>All</li>
                         <li onClick={() => filterProduct('Camera')} className='nav-item category-item'>Camera</li>
                         <li onClick={() => filterProduct('Laptop')} className='nav-item category-item'>Laptop</li>
                         <li onClick={() => filterProduct('Headphone')} className='nav-item category-item'>Headphone</li>
                         <li onClick={() => filterProduct('Drone')} className='nav-item category-item'>Drone</li>
                         <li onClick={() => filterProduct('Mobile')} className='nav-item category-item'>Mobile</li>
                     </ul>
+                    
                 </div>
 
                 <div className="row my-3 g-4">
@@ -51,7 +66,7 @@ const Product = () => {
                                             <p>{title.slice(0,50)}</p>
                                             <div className='d-flex justify-content-between alifn-items-center mt-3'>
                                                 <h5 className='price-color'>${price}</h5>
-                                                <button className='cat-btn me-2'>Add To Cart</button>
+                                                <button onClick={() => setModalShow(true)} className='cat-btn me-2'>Add To Cart</button>
                                             </div>
                                         </div>
                                     </div>
@@ -59,6 +74,10 @@ const Product = () => {
                             )
                         })
                     }
+                    <MyVerticallyCenteredModal
+                    show={modalShow}
+                    onHide={() => setModalShow(false)}
+                    />
                 </div>
 
             </div>    

@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NoMatch from "./Pages/NoMatch/NoMatch";
 import Header from "./Pages/Header/Header";
 import Footer from "./Pages/Footer/Footer";
+import React from "react";
+
 
 function App() {
 	return (
