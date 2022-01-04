@@ -27,6 +27,9 @@ const Header = () => {
 						<Nav.Link className="text-white" as={Link} to="/login">
 							Card
 						</Nav.Link>
+						<Nav.Link className="text-white" as={Link} to="/add">
+							Add Product
+						</Nav.Link>
 						<Nav.Link className="text-white" as={Link} to="/login">
 							<button
 								className="btn rounded-pill px-3 py-1 fw-bold text-white"
