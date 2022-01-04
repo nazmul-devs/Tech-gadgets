@@ -4,6 +4,10 @@
 .App-header {
 	text-align: justify;
 }
-a{
+a {
 	text-decoration: none;
+}
+
+img {
+	object-fit: cover;
 }
