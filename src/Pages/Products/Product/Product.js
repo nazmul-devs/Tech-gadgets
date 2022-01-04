@@ -80,7 +80,7 @@ const Product = () => {
 						return (
 							<div key={id} className="col-lg-3 col-md-6 col-12 ">
 								<div className="card my-card h-100">
-									<div className="mt-4">
+									<div className="m-4 img-div">
 										<img
 											src={img}
 											className="product-img card-img-top img-fluid"
