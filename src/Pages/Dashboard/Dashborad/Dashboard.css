@@ -1,0 +1,35 @@
+.dashboard{
+    display: flex;
+    position: fixed;
+   
+}
+.d-info{
+    height: 100vh;
+    width: 15vw;
+    color: white;
+    text-align: center;
+    background-color: #1C4E80;
+}
+.d-info > ul{
+    margin-top: 30px;
+}
+.d-info > ul > li {
+    list-style: none;
+    text-decoration: none;
+    text-align: start;
+    margin-top: 10px;
+    padding-left: 25px;
+    cursor: pointer;
+}
+.d-info > ul > li:hover{
+    transform: translateX(5%);
+    transition: .9ms;
+}
+.d-item{
+    height: 100vh;
+    width: 85vw;
+}
+.userImg{
+    width: 50px;
+    height: 50px;
+}

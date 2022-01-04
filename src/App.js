@@ -7,6 +7,7 @@ import NoMatch from "./Pages/NoMatch/NoMatch";
 import Header from "./Pages/Header/Header";
 import Footer from "./Pages/Footer/Footer";
 import Register from "./Pages/Login/Register";
+import Dashborad from "./Pages/Dashboard/Dashborad/Dashborad";
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 					<Route path="/" element={<Home />} />
 					<Route path="/login" element={<Login />} />
 					<Route path="/register" element={<Register />} />
+					<Route path="/dashboard" element={<Dashborad />} />
 					<Route path="*" element={<NoMatch />} />
 				</Routes>
 				<Footer />
