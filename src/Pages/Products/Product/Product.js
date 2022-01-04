@@ -1,6 +1,18 @@
 import React, { useEffect, useState } from "react";
 import "./Product.css";
 
+function Modal() {
+	return (
+        <Modal
+		size="md"
+		aria-labelledby="contained-modal-title-vcenter"
+		centered
+        >
+		
+	  </Modal>
+	);
+  }
+
 const Product = () => {
 	const [products, setProducts] = useState([]);
 	const [filters, setFilters] = useState([]);
