@@ -1,13 +1,29 @@
 import React from "react";
 import "./login.css";
 import { useForm } from "react-hook-form";
+import { useLocation, useNavigate } from "react-router";
 import { Link } from "react-router-dom";
+import useAuth from "../../Hooks/useAuth";
 
 const Login = () => {
-	const { register, handleSubmit, watch } = useForm();
-	const onSubmit = (data) => console.log(data);
+	const { register, handleSubmit } = useForm();
+	const { googleSignIn, loading } = useAuth();
+	let location = useLocation();
+	let navigate = useNavigate();
+	const onSubmit = (data) => {
+		console.log(data)
+	};
+	const googleSignInHandler = () => {
+		googleSignIn(location, navigate);
+	}
+	if (loading) {
+		return <div class="d-flex justify-content-center m-5">
+			<div class="spinner-border" role="status">
+				<span class="visually-hidden">Loading...</span>
+			</div>
+		</div>
+	}
 
-	console.log(watch("example"));
 	return (
 		<div className="login">
 			<div className="login-card">
@@ -48,6 +64,7 @@ const Login = () => {
 							<button
 								className="btn rounded-circle text-white m-1"
 								style={{ background: "#cc3333" }}
+								onClick={googleSignInHandler}
 							>
 								<i className="fab fa-google"></i>
 							</button>

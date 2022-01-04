@@ -14,11 +14,12 @@ const useFirebase = () => {
 	const [loading, setLoading] = useState(true);
 	const [autError, setAutError] = useState('');
 	const [user, setUser] = useState({});
+	console.log(user);
 	const googleProvider = new GoogleAuthProvider();
 	const auth = getAuth();
 	// google login
-	const googleSignIn = () => {
-
+	const googleSignIn = (location, navigate) => {
+		setLoading(true)
 
 		signInWithPopup(auth, googleProvider)
 			.then((result) => {
@@ -26,13 +27,15 @@ const useFirebase = () => {
 				const user = result.user;
 				setUser(user);
 				setAutError('');
+				const destintion = location?.from?.state || "/";
+				navigate(destintion);
 				// ...
 			}).catch((error) => {
 				// Handle Errors here.
 
 				const errorMessage = error.message;
 				setAutError(errorMessage)
-			});
+			}).finally(() => setLoading(false));
 	};
 
 	// set user

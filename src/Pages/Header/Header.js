@@ -1,9 +1,11 @@
 import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import useAuth from "../../Hooks/useAuth";
 import logo from "../../Images/logo.jpg";
 
 const Header = () => {
+	const { user, logout } = useAuth();
 	return (
 		<Navbar
 			className="w-100 text-white"
@@ -30,22 +32,26 @@ const Header = () => {
 						<Nav.Link className="text-white" as={Link} to="/add">
 							Add Product
 						</Nav.Link>
-						<Nav.Link className="text-white" as={Link} to="/login">
+						<Nav.Link className="text-danger" >
+							{user.displayName}
+						</Nav.Link>
+						{!user.email && <Nav.Link className="text-white" as={Link} to="/login">
 							<button
 								className="btn rounded-pill px-3 py-1 fw-bold text-white"
 								style={{ background: "dodgerblue" }}
 							>
 								Login
 							</button>
-						</Nav.Link>
-						<Nav.Link className="text-white">
+						</Nav.Link>}
+						{user.email && <Nav.Link className="text-white">
 							<button
 								className="btn rounded-pill px-3 py-1 fw-bold text-white"
 								style={{ background: "dodgerblue" }}
+								onClick={logout}
 							>
 								<i className="fas fa-sign-in-alt"></i> Logout
 							</button>
-						</Nav.Link>
+						</Nav.Link>}
 					</Nav>
 				</Navbar.Collapse>
 			</Container>
