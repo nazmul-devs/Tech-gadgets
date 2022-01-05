@@ -27,7 +27,7 @@ const useFirebase = () => {
 				const user = result.user;
 				setUser(user);
 				setAutError('');
-				const destintion = location?.from?.state || "/";
+				const destintion = location?.state?.from || "/";
 				navigate(destintion);
 				// ...
 			}).catch((error) => {
