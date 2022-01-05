@@ -8,8 +8,8 @@ const Header = () => {
 	const { user, logout } = useAuth();
 	return (
 		<Navbar
-			className="w-100 text-white sticky-top"
-			expand="lg"
+			className=" text-white sticky-top"
+			expand="md"
 			style={{ background: "#FFAE03" }}
 		>
 			<Container>

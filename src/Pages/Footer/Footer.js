@@ -5,7 +5,7 @@ const Footer = () => {
 	return (
 		<div className="footer pt-5">
 			<div className="container mb-4">
-				<div className="footer-info row">
+				<div className="footer-info row g-4">
 					<div className="col-12 col-md-5">
 						<ul className="f-list">
 							<h5>CONTACT US</h5>
@@ -38,8 +38,8 @@ const Footer = () => {
 						</ul>
 					</div>
 					<div className="col-12 col-md-3">
-						<h5>FOLLOW US</h5>
 						<ul className="f-list">
+						    <h5>FOLLOW US</h5>
 							<li>
 								<i className="fab fa-facebook-f f-icon"></i>
 							</li>

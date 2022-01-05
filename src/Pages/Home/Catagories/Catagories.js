@@ -5,8 +5,8 @@ const Catagories = () => {
 		<div className="container mb-5">
 			<h3 className="py-5 text-center">SHOP BY CATEGORIES</h3>
 
-			<div className="row row-cols-1 row-cols-md-4 g-4">
-				<div className="col">
+			<div className="row g-4">
+				<div className="col-12 col-md-6 col-lg-3">
 					<div className="card h-100">
 						<img
 							src="http://magento2.magentech.com/themes/sm_zumi/pub/media/catalog/category/img-hot-categories-1_1.jpg"
@@ -23,7 +23,7 @@ const Catagories = () => {
 						</div>
 					</div>
 				</div>
-				<div className="col">
+				<div className="col-12 col-md-6 col-lg-3">
 					<div className="card h-100">
 						<img
 							src="http://magento2.magentech.com/themes/sm_zumi/pub/media/catalog/category/img-hot-categories-2.jpg"
@@ -36,7 +36,7 @@ const Catagories = () => {
 						</div>
 					</div>
 				</div>
-				<div className="col">
+				<div className="col-12 col-md-6 col-lg-3">
 					<div className="card h-100">
 						<img
 							src="http://magento2.magentech.com/themes/sm_zumi/pub/media/catalog/category/img-hot-categories-3.jpg"
@@ -52,7 +52,7 @@ const Catagories = () => {
 						</div>
 					</div>
 				</div>
-				<div className="col">
+				<div className="col-12 col-md-6 col-lg-3">
 					<div className="card h-100">
 						<img
 							src="http://magento2.magentech.com/themes/sm_zumi/pub/media/catalog/category/img-hot-categories-4.jpg"
