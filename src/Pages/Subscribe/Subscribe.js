@@ -3,7 +3,7 @@ import './Subscribe.css'
 
 const Subscribe = () => {
     return (
-        <div className='subscribe mb-5'>
+        <div className='subscribe'>
             <div className='container text-center pt-4'>
                 <h5 className='text-white'>NEED HELP? CALL OUR AWARD-WINNING</h5>
                 <p className='text-white'>SUPPORT TEAM 24/7 AT (844) 555-8386</p>
