@@ -6,7 +6,7 @@ import logo from "../../Images/logo.jpg";
 const Header = () => {
 	return (
 		<Navbar
-			className="w-100 text-white"
+			className="w-100 text-white sticky-top"
 			expand="lg"
 			style={{ background: "#FFAE03" }}
 		>
