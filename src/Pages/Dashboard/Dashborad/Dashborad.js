@@ -31,6 +31,7 @@ const Dashborad = () => {
 
                 <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                   <MyOrder></MyOrder>
+                  <MyOrder></MyOrder>
                 </div>
                 <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                   <Payment></Payment>
