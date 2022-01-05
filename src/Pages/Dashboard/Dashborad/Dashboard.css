@@ -16,14 +16,6 @@
     margin-top: 30px;
 }
 
-.d-info > ul > li {
-    list-style: none;
-    text-decoration: none;
-    text-align: start;
-    margin-top: 10px;
-    padding-left: 25px;
-    cursor: pointer;
-}
 
 .d-info > ul > li:hover{
     transform: translateX(5%);
