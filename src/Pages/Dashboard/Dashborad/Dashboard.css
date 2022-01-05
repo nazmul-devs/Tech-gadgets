@@ -1,0 +1,71 @@
+.dashboard{
+    display: flex;
+    position: fixed;
+   
+}
+
+.d-info{
+    height: 100vh;
+    width: 15vw;
+    color: white;
+    text-align: center;
+    background-color: #1C4E80;
+    padding: 5px;
+}
+
+.d-info > ul{
+    margin-top: 30px;
+}
+
+.d-info > ul > li {
+    list-style: none;
+    text-decoration: none;
+    text-align: start;
+    margin-top: 10px;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+.d-info > ul > li:hover{
+    transform: translateX(5%);
+    transition: .9ms;
+}
+
+.d-item{
+    width: 85vw;
+    overflow-y:scroll; 
+    overflow-x:hidden; 
+    height: 100vh;
+    
+}
+
+.userImg{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/* responsive feDiffuseLighting */
+
+@media screen and (max-width: 768px) {
+    .d-info {
+      background-color: blue;
+      width: 20vw;
+    }
+    .d-info > ul > li {
+        padding-left: 10px;
+    }
+    .d-item{
+        width: 80vw;  
+    }
+  }
+
+  @media screen and (max-width: 478px){
+      .d-info{
+        width: 20vw;
+      }
+      .d-item{
+        width: 80vw;  
+    }
+  }

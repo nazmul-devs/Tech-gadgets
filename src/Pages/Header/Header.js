@@ -8,7 +8,7 @@ const Header = () => {
 	const { user, logout } = useAuth();
 	return (
 		<Navbar
-			className="w-100 text-white"
+			className="w-100 text-white sticky-top"
 			expand="lg"
 			style={{ background: "#FFAE03" }}
 		>
@@ -23,7 +23,7 @@ const Header = () => {
 							Home
 						</Nav.Link>
 
-						<Nav.Link className="text-white" as={Link} to="/login">
+						<Nav.Link className="text-white" as={Link} to="/dashboard">
 							Dashboard
 						</Nav.Link>
 						<Nav.Link className="text-white" as={Link} to="/login">

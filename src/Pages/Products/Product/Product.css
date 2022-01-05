@@ -24,9 +24,9 @@
 	transition-duration: 0.5s;
 }
 .product-img {
-	width: 95%;
-	height: 200px;
-	object-fit: cover;
+	height: 150px;
+	object-position: center;
+	object-fit: contain;	    
 }
 .price-color {
 	color: #e01222;
