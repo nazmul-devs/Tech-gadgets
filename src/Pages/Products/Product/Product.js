@@ -5,23 +5,23 @@ import "./Product.css";
 
 function MyVerticallyCenteredModal(props) {
 	return (
-	  <Modal
-		{...props}
-		size="md"
-		aria-labelledby="contained-modal-title-vcenter"
-		centered
-	  >
-		<Modal.Header className="py-1" closeButton>
-		  <Modal.Title id="contained-modal-title-vcenter">
-		  	Place Your Order
-		  </Modal.Title>
-		</Modal.Header>
-		<Modal.Body>
-		  <OrderPlace></OrderPlace>
-		</Modal.Body>
-	  </Modal>
+		<Modal
+			{...props}
+			size="md"
+			aria-labelledby="contained-modal-title-vcenter"
+			centered
+		>
+			<Modal.Header className="py-1" closeButton>
+				<Modal.Title id="contained-modal-title-vcenter">
+					Place Your Order
+				</Modal.Title>
+			</Modal.Header>
+			<Modal.Body>
+				<OrderPlace></OrderPlace>
+			</Modal.Body>
+		</Modal>
 	);
-  }
+}
 
 const Product = () => {
 	const [products, setProducts] = useState([]);
@@ -29,7 +29,7 @@ const Product = () => {
 	const [modalShow, setModalShow] = React.useState(false);
 
 	useEffect(() => {
-		fetch("./ProductData.json")
+		fetch("http://localhost:5000/products")
 			.then((res) => res.json())
 			.then((data) => {
 				setProducts(data);
@@ -83,7 +83,7 @@ const Product = () => {
 						</li>
 					</ul>
 				</div>
-			
+
 				<div className="row my-3 g-4">
 					{filters.map((product) => {
 						const { img, title, price, id } = product;
@@ -102,9 +102,12 @@ const Product = () => {
 										<p>{title.slice(0, 50)}</p>
 										<div className="d-flex justify-content-between alifn-items-center mt-3">
 											<h5 className="price-color">${price}</h5>
-											<Button className="cat-btn me-2" onClick={() => setModalShow(true)}>
+											<Button
+												className="cat-btn me-2"
+												onClick={() => setModalShow(true)}
+											>
 												Add To Cart
-      										</Button>
+											</Button>
 										</div>
 									</div>
 								</div>
@@ -112,13 +115,12 @@ const Product = () => {
 						);
 					})}
 				</div>
-				
+
 				{/* use for modal */}
 				<MyVerticallyCenteredModal
 					show={modalShow}
 					onHide={() => setModalShow(false)}
 				/>
-
 			</div>
 		</div>
 	);

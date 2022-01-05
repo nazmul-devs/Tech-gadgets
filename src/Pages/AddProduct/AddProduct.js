@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import swal from "sweetalert";
 
 const AddProduct = () => {
 	const { register, handleSubmit, reset } = useForm();
@@ -12,8 +13,11 @@ const AddProduct = () => {
 			body: JSON.stringify(data),
 		})
 			.then((res) => res.json())
-			.then((data2) => console.log(data2));
-		console.log("ehskdhf");
+			.then((data2) => {
+				if (data2.acknowledged) {
+					swal("Good job!", "Product added successfully!", "success");
+				}
+			});
 		reset();
 	};
 
