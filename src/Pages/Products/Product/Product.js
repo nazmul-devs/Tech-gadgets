@@ -17,7 +17,7 @@ function MyVerticallyCenteredModal(props) {
 				</Modal.Title>
 			</Modal.Header>
 			<Modal.Body>
-				<OrderPlace></OrderPlace>
+				<OrderPlace ii={props.indexNo}></OrderPlace>
 			</Modal.Body>
 		</Modal>
 	);
@@ -27,6 +27,13 @@ const Product = () => {
 	const [products, setProducts] = useState([]);
 	const [filters, setFilters] = useState([]);
 	const [modalShow, setModalShow] = React.useState(false);
+	const [indexNo, setIndexNo] = useState(0);
+
+	// handle booking
+	const handleBookin = (index) => {
+		setIndexNo(index);
+		setModalShow(true);
+	};
 
 	useEffect(() => {
 		fetch("http://localhost:5000/products")
@@ -47,7 +54,9 @@ const Product = () => {
 	return (
 		<div className="product text-center py-5">
 			<div className="container px-0">
-				<h3>Our Products</h3>
+				<h3 style={{ color: "#2c3e50" }} className="text-bold">
+					Our Products
+				</h3>
 				<div className="under-line mx-auto"></div>
 				<div className="">
 					<ul className="nav product-category d-flex justify-content-center">
@@ -85,11 +94,11 @@ const Product = () => {
 				</div>
 
 				<div className="row my-3 g-4">
-					{filters.map((product) => {
-						const { img, title, price, id } = product;
+					{filters.map((product, index) => {
+						const { img, title, price, _id } = product;
 
 						return (
-							<div key={id} className="col-lg-3 col-md-6 col-12 ">
+							<div key={_id} className="col-lg-3 col-md-6 col-12 ">
 								<div className="card my-card h-100">
 									<div className="m-4 img-div">
 										<img
@@ -104,7 +113,7 @@ const Product = () => {
 											<h5 className="price-color">${price}</h5>
 											<Button
 												className="cat-btn me-2"
-												onClick={() => setModalShow(true)}
+												onClick={() => handleBookin(_id)}
 											>
 												Add To Cart
 											</Button>
@@ -118,6 +127,7 @@ const Product = () => {
 
 				{/* use for modal */}
 				<MyVerticallyCenteredModal
+					indexNo={indexNo}
 					show={modalShow}
 					onHide={() => setModalShow(false)}
 				/>
