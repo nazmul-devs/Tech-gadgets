@@ -10,26 +10,17 @@
     color: white;
     text-align: center;
     background-color: #1C4E80;
-    padding: 5px;
 }
 
-.d-info > ul{
+/* .d-info > ul{
     margin-top: 30px;
 }
 
-.d-info > ul > li {
-    list-style: none;
-    text-decoration: none;
-    text-align: start;
-    margin-top: 10px;
-    padding-left: 25px;
-    cursor: pointer;
-}
 
 .d-info > ul > li:hover{
     transform: translateX(5%);
-    transition: .9ms;
-}
+    transition: .20ms;
+} */
 
 .d-item{
     width: 85vw;
@@ -47,7 +38,7 @@
 
 
 /* responsive feDiffuseLighting */
-
+/* 
 @media screen and (max-width: 768px) {
     .d-info {
       background-color: blue;
@@ -68,4 +59,4 @@
       .d-item{
         width: 80vw;  
     }
-  }
+  } */
