@@ -10,6 +10,7 @@ import Footer from "./Pages/Footer/Footer";
 import Register from "./Pages/Login/Register";
 import AddProduct from "./Pages/AddProduct/AddProduct";
 import Dashborad from "./Pages/Dashboard/Dashborad/Dashborad";
+import PrivateRoute from "./PrivateRoute/PrivateRoute";
 
 function App() {
 	return (
@@ -21,7 +22,15 @@ function App() {
 					<Route path="/login" element={<Login />} />
 					<Route path="/register" element={<Register />} />
 					<Route path="/add" element={<AddProduct />} />
-					<Route path="/dashboard" element={<Dashborad />} />
+					<Route
+						path="/dashboard"
+						element={
+							<PrivateRoute>
+								<Dashborad />
+							</PrivateRoute>
+						}
+					/>
+					{/* <Route path="/dashboard" element={<Dashborad />} /> */}
 					<Route path="*" element={<NoMatch />} />
 				</Routes>
 				<Footer />
