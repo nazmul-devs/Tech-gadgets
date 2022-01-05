@@ -49,39 +49,37 @@ const Product = () => {
 			<div className="container px-0">
 				<h3>Our Products</h3>
 				<div className="under-line mx-auto"></div>
-				<div className="">
-					<ul className="nav product-category d-flex justify-content-center">
-						<li
-							onClick={() => filterProduct("Camera")}
-							className="nav-item category-item"
-						>
-							Camera
-						</li>
-						<li
-							onClick={() => filterProduct("Laptop")}
-							className="nav-item category-item"
-						>
-							Laptop
-						</li>
-						<li
-							onClick={() => filterProduct("Headphone")}
-							className="nav-item category-item"
-						>
-							Headphone
-						</li>
-						<li
-							onClick={() => filterProduct("Drone")}
-							className="nav-item category-item"
-						>
-							Drone
-						</li>
-						<li
-							onClick={() => filterProduct("Mobile")}
-							className="nav-item category-item"
-						>
-							Mobile
-						</li>
-					</ul>
+				<div className="row g-3 product-category mt-4 d-flex justify-content-center px-md-5 mx-md-5">
+					<div
+						onClick={() => filterProduct("Camera")}
+						className="col-4 col-md-2 category-item"
+					>
+						Camera
+					</div>
+					<div
+						onClick={() => filterProduct("Laptop")}
+						className="col-4 col-md-2 category-item"
+					>
+						Laptop
+					</div>
+					<div
+						onClick={() => filterProduct("Headphone")}
+						className="col-4 col-md-2 text-center category-item"
+					>
+						Headphone
+					</div>
+					<div
+						onClick={() => filterProduct("Drone")}
+						className="col-4 col-md-2 category-item"
+					>
+						Drone
+					</div>
+					<div
+						onClick={() => filterProduct("Mobile")}
+						className="col-4 col-md-2 category-item"
+					>
+						Mobile
+					</div>
 				</div>
 			
 				<div className="row my-3 g-4">
@@ -89,7 +87,7 @@ const Product = () => {
 						const { img, title, price, id } = product;
 
 						return (
-							<div key={id} className="col-lg-3 col-md-6 col-12 ">
+							<div key={id} className="col-lg-3 col-md-4 col-12 ">
 								<div className="card my-card h-100">
 									<div className="m-4 img-div">
 										<img
@@ -99,7 +97,7 @@ const Product = () => {
 										/>
 									</div>
 									<div className="card-body text-start">
-										<p>{title.slice(0, 50)}</p>
+										<p className="text-primary">{title.slice(0, 50)}. . .</p>
 										<div className="d-flex justify-content-between alifn-items-center mt-3">
 											<h5 className="price-color">${price}</h5>
 											<Button className="cat-btn me-2" onClick={() => setModalShow(true)}>
